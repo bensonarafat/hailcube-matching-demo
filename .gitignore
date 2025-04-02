@@ -1,2 +1,5 @@
 .env
 *.env
+__pycache__/
+services/__pycache__/
+tasks/__pycache__/
