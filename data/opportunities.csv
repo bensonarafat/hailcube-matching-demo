@@ -1,31 +1,28 @@
 id,opportunity_type,title,description,required_skills,urgency
-1,real-time,Data Pipeline Engineer,Real-time data processing pipeline development,"Python, Kafka, Streaming",high
-2,batch,Data Analyst,Batch processing analytics system,"SQL, Python, Data Visualization",medium
-3,real-time,Test,Description,"html,css",high
-4,batch,lkdflfkld,ldkfkkdf,"html,css",high
-5,batch,lkdflfkld,ldkfkkdf,"html,css",high
-6,real-time,Machine Learning Engineer,Building real-time ML models for fraud detection,"Python, TensorFlow, Kafka",high
-7,batch,ETL Developer,Develop batch ETL pipelines for data warehousing,"SQL, Python, Airflow",medium
-8,real-time,DevOps Engineer,Deploy and manage real-time infrastructure,"Kubernetes, Docker, CI/CD",high
-9,batch,Business Intelligence Analyst,Analyze business data trends and insights,"SQL, Power BI, Tableau",low
-10,real-time,Cloud Engineer,Optimize cloud-based real-time processing,"AWS, GCP, Terraform",high
-11,batch,Database Administrator,Manage and optimize large batch data queries,"SQL, PostgreSQL, Performance Tuning",medium
-12,real-time,Software Engineer - Streaming,Develop and maintain streaming applications,"Java, Kafka, Flink",high
-13,batch,Data Governance Specialist,Ensure compliance and data quality in batch systems,"Data Governance, SQL, Python",low
-14,real-time,Site Reliability Engineer,Improve real-time system reliability and scalability,"Linux, Monitoring, Kubernetes",high
-15,batch,Financial Data Analyst,Analyze financial batch data for risk assessment,"Excel, SQL, Python",medium
-16,real-time,AI Engineer,Develop AI-powered real-time recommendation systems,"Python, PyTorch, TensorFlow",high
-17,batch,Cybersecurity Analyst,Analyze security logs and detect threats in batch processing,"SIEM, Python, Splunk",medium
-18,real-time,Full-Stack Developer,Build and optimize real-time web applications,"JavaScript, Node.js, WebSockets",high
-19,batch,Market Research Analyst,Analyze batch data to identify market trends,"Excel, SQL, Data Visualization",low
-20,real-time,Embedded Systems Engineer,Develop real-time embedded applications for IoT devices,"C++, RTOS, Microcontrollers",high
-21,batch,Blockchain Analyst,Process blockchain data in batch for insights,"Solidity, Python, Ethereum",medium
-22,real-time,Streaming Data Engineer,Handle real-time event-driven architectures,"Apache Flink, Kafka, Java",high
-23,batch,HR Data Analyst,Analyze HR data and generate reports in batch,"Excel, Power BI, SQL",low
-24,real-time,AR/VR Developer,Build interactive real-time AR/VR applications,"Unity, C#, ARKit, ARCore",high
-25,batch,SEO Analyst,Process batch data to optimize search rankings,"Google Analytics, SEO, Python",medium
-26,real-time,Computer Vision Engineer,Develop real-time image recognition systems,"OpenCV, Deep Learning, Python",high
-27,batch,Supply Chain Analyst,Analyze and optimize supply chain data in batch,"SQL, Logistics, Tableau",medium
-28,real-time,Mobile Developer,Develop real-time chat applications,"Flutter, Firebase, WebSockets",high
-29,batch,Medical Data Scientist,Process batch medical records for insights,"R, Python, Data Science",medium
-30,real-time,Autonomous Systems Engineer,Develop real-time navigation for autonomous vehicles,"ROS, C++, Sensor Fusion",high
+1,remote,Data Pipeline Engineer,Real-time data processing pipeline development,"Python, Kafka, Streaming",high
+2,hybrid,Data Analyst,Batch processing analytics system,"SQL, Python, Data Visualization",medium
+6,remote,Machine Learning Engineer,Building real-time ML models for fraud detection,"Python, TensorFlow, Kafka",high
+7,full-time,ETL Developer,Develop batch ETL pipelines for data warehousing,"SQL, Python, Airflow",medium
+8,hybrid,DevOps Engineer,Deploy and manage real-time infrastructure,"Kubernetes, Docker, CI/CD",high
+9,remote,Business Intelligence Analyst,Analyze business data trends and insights,"SQL, Power BI, Tableau",low
+10,full-time,Cloud Engineer,Optimize cloud-based real-time processing,"AWS, GCP, Terraform",high
+11,remote,Database Administrator,Manage and optimize large batch data queries,"SQL, PostgreSQL, Performance Tuning",medium
+12,hybrid,Software Engineer - Streaming,Develop and maintain streaming applications,"Java, Kafka, Flink",high
+13,remote,Data Governance Specialist,Ensure compliance and data quality in batch systems,"Data Governance, SQL, Python",low
+14,hybrid,Site Reliability Engineer,Improve real-time system reliability and scalability,"Linux, Monitoring, Kubernetes",high
+15,remote,Financial Data Analyst,Analyze financial batch data for risk assessment,"Excel, SQL, Python",medium
+16,full-time,AI Engineer,Develop AI-powered real-time recommendation systems,"Python, PyTorch, TensorFlow",high
+17,remote,Cybersecurity Analyst,Analyze security logs and detect threats in batch processing,"SIEM, Python, Splunk",medium
+18,hybrid,Full-Stack Developer,Build and optimize real-time web applications,"JavaScript, Node.js, WebSockets",high
+19,full-time,Market Research Analyst,Analyze batch data to identify market trends,"Excel, SQL, Data Visualization",low
+20,remote,Embedded Systems Engineer,Develop real-time embedded applications for IoT devices,"C++, RTOS, Microcontrollers",high
+21,hybird,Blockchain Analyst,Process blockchain data in batch for insights,"Solidity, Python, Ethereum",medium
+22,remote,Streaming Data Engineer,Handle real-time event-driven architectures,"Apache Flink, Kafka, Java",high
+23,hybird,HR Data Analyst,Analyze HR data and generate reports in batch,"Excel, Power BI, SQL",low
+24,full-time,AR/VR Developer,Build interactive real-time AR/VR applications,"Unity, C#, ARKit, ARCore",high
+25,remote,SEO Analyst,Process batch data to optimize search rankings,"Google Analytics, SEO, Python",medium
+26,full-time,Computer Vision Engineer,Develop real-time image recognition systems,"OpenCV, Deep Learning, Python",high
+27,remote,Supply Chain Analyst,Analyze and optimize supply chain data in batch,"SQL, Logistics, Tableau",medium
+28,hybird,Mobile Developer,Develop real-time chat applications,"Flutter, Firebase, WebSockets",high
+29,remote,Medical Data Scientist,Process batch medical records for insights,"R, Python, Data Science",medium
+30,full-time,Autonomous Systems Engineer,Develop real-time navigation for autonomous vehicles,"ROS, C++, Sensor Fusion",high
