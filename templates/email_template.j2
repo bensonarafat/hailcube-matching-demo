@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container { max-width: 600px; margin: 20px auto; font-family: Arial, sans-serif; }
+        .header { color: #2B3467; border-bottom: 2px solid #2B3467; padding-bottom: 10px; }
+        .content { margin: 20px 0; line-height: 1.6; }
+        .cta { background-color: #2B3467; color: white; padding: 12px 25px; 
+               text-decoration: none; border-radius: 5px; display: inline-block; }
+        .footer { margin-top: 30px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>New Opportunity at Hailcube</h2>
+        </div>
+        
+        <div class="content">
+            <p>Hi {{ contact.name }},</p>
+            
+            <p>We have a <strong>{{ opportunity.opportunity_type }}</strong> opportunity 
+            that matches your skills in <em>{{ contact.skills }}</em>:</p>
+            
+            <h3>{{ opportunity.title }}</h3>
+            <p>{{ opportunity.description }}</p>
+            
+            <p><strong>Required Skills:</strong><br>
+            {{ opportunity.required_skills|replace(',', ' •') }}</p>
+            
+            {% if opportunity.urgency == 'high' %}
+            <p>⏰ Immediate response needed</p>
+            {% endif %}
+            
+            <a href="mailto:opportunities@hailcube.com?subject=Interested in {{ opportunity.title|urlencode }}" 
+               class="cta">Express Interest</a>
+        </div>
+        
+        <div class="footer">
+            <p>Best regards,<br>
+            Hailcube Opportunities Team</p>
+            
+            <p><small>
+                You're receiving this because you're in our professional network.<br>
+                <a href="https://hailcube.com/unsubscribe?email={{ contact.email|urlencode }}">Unsubscribe</a> | 
+                <a href="https://hailcube.com/privacy">Privacy Policy</a>
+            </small></p>
+        </div>
+    </div>
+</body>
+</html>

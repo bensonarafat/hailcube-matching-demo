@@ -1,0 +1,19 @@
+:rocket: *New Hailcube Opportunity Alert* :male-technologist:
+
+*Hi {{ contact.name }}!* 
+
+We think you'd be great for this *{{ opportunity.opportunity_type }}* role:
+
+*{{ opportunity.title }}*
+> {{ opportunity.description|truncate(200) }}
+
+*Key Requirements*:
+{% for skill in opportunity.required_skills.split(',') %}
+• {{ skill.strip() }}
+{% endfor %}
+
+{% if opportunity.urgency == 'high' %}
+:warning: *Time-sensitive opportunity* - please respond within 24 hours
+{% endif %}
+
+_Reply to this message or email opportunities@hailcube.com to express interest_
