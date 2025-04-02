@@ -1,5 +1,5 @@
 id,name,email,slack_id,skills,timezone,preferred_contact,status
-1,Benson Arafat,benpaul320@gmail.com,U0817SSGULD,"Python, APIs, Data Analysis",America/New_York,email,1
+1,Benson Arafat,benpaul320@gmail.com,U0817SSGULD,"Python, APIs, Data Analysis",America/New_York,email,0
 2,Cdoe Pym,codepym.ini@gmail.com,U07U1N20JSD,"Java, Kafka, Streaming",Europe/London,slack,1
 3,Ada Lovelace,ada.lovelace@gmail.com,U07X2ABCD12,"Python, Machine Learning, Data Science",Europe/Paris,email,0
 4,John Doe,johndoe@gmail.com,U081XYZW234,"JavaScript, React, Node.js",America/Los_Angeles,slack,0
