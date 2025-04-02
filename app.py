@@ -54,7 +54,7 @@ def add_opportunity():
             opp_df.to_csv('data/opportunities.csv', index=False)
             
             # Trigger matching immediately
-            run_matching.delay()
+            run_matching.delay(opportunity_id=new_id)
             
             return redirect(url_for('dashboard'))
         except Exception as e:

@@ -14,7 +14,7 @@ def send_message(self, contact_dict, opportunity_dict):
         self.retry(exc=e, countdown=2 ** self.request.retries)
         
 @celery.task
-def run_matching():
+def run_matching(opportunity_id=None):
     min_similarity_threshold = 0.15
     top_n = 3
     """
@@ -30,9 +30,14 @@ def run_matching():
         # Load data with validation
         if not matcher.load_data():
             print("Error loading data. Aborting matching process.")
-            return False 
+            return False
         
-        new_opps = matcher.opportunities
+        # Filter for specific opportunity if ID is provided
+        if opportunity_id is not None:
+            new_opps = matcher.opportunities[matcher.opportunities['id'] == opportunity_id]
+            print(f"Processing only opportunity ID: {opportunity_id}")
+        else:
+            new_opps = matcher.opportunities
         
         if new_opps.empty:
             print("No opportunities found, Skipping matching process.") 

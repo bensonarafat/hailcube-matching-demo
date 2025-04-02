@@ -38,6 +38,10 @@ class MatchingSystem:
                if col not in self.opportunities.columns:
                    raise ValueError(f"Missing required column '{col} in opportunities data")
                
+           # Filter to only include active contacts (status=1)
+           self.contacts = self.contacts[self.contacts['status'] == 1]
+           print(f"Using {len(self.contacts)} active contacts for matching")
+
            return True 
          except Exception as e:
             print(f"Error loading data: {type(e).__name__}: {str(e)}")
@@ -142,80 +146,3 @@ class MatchingSystem:
                 matches[opp_id] = pd.DataFrame()
                 
         return matches
-    
-    def explain_match(self, opportunity_id, contact_id):
-        """Explain why a particular contact matches an opportunity"""
-        try:
-           # Find the opportunity and contact
-           opp = self.opportunities[self.opportunities['id'] == opportunity_id].iloc[0]
-           contact = self.contacts[self.contacts['id'] == contact_id].iloc[0]
-           
-           # Get their vector representations
-           opp_idx = self.opportunities[self.opportunities['id'] == opportunity_id].index[0]
-           contact_idx = self.contacts[self.contacts['id'] == contact_id].index[0]
-           
-           opp_vec = self.opportunity_embeddings[opp_idx]
-           contact_vec = self.contact_embeddings[contact_idx]
-
-           # Calculate similarity
-           similarity = cosine_similarity([opp_vec], [contact_vec])[0][0]
-
-           # Get top matching terms
-           # Element-wise multiply to see which terms contribute most to similarity
-           importance = opp_vec * contact_vec
-            
-            # Get top 5 terms
-           top_indices = importance.argsort()[-5:][::-1]
-           top_terms = [(self.feature_names[i], importance[i]) for i in top_indices if importance[i] > 0]
-            
-            
-           explanation = {
-                "similarity_score": similarity,
-                "top_matching_terms": top_terms,
-                "opportunity": {k: v for k, v in opp.items() if k in ['id', 'description', 'required_skills']},
-                "contact": {k: v for k, v in contact.items() if k in ['id', 'skills', 'timezone']}
-            }
-           
-           return explanation
-        except (IndexError, KeyError) as e:
-          return {"error": f"Could not find opportunity or contact: {str(e)}"}
-      
-    def evaluate_matches(self, ground_truth_matches):
-        """
-        Evaluate matching quality if ground truth data is available
-        ground_truth_matches: dict mapping opportunity_id -> list of correct contact_ids
-
-        """
-        precision_sum = 0
-        recall_sum = 0
-        count = 0
-        
-        predicted_matches = self.find_matches(top_n=10)
-        
-        for opp_id, true_contacts in ground_truth_matches.items():
-            if opp_id in predicted_matches:
-                pred_contacts = predicted_matches[opp_id]['id'].tolist()
-                
-                # Calculate precision: how many of our predictions are correct
-                correct_predictions = set(pred_contacts).intersection(set(true_contacts))
-                precision = len(correct_predictions) / len(pred_contacts) if pred_contacts else 0
-                
-                # Calculate recall: how many of the true matches we found
-                recall = len(correct_predictions) / len(true_contacts) if true_contacts else 0
-                
-                precision_sum += precision
-                recall_sum += recall
-                count += 1
-                
-        # Calculate average precision and recall
-        avg_precision = precision_sum / count if count > 0 else 0
-        avg_recall = recall_sum / count if count > 0 else 0
-        
-        # Calculate F1 score
-        f1 = 2 * (avg_precision * avg_recall) / (avg_precision + avg_recall) if (avg_precision + avg_recall) > 0 else 0
-        
-        return {
-            "average_precision": avg_precision,
-            "average_recall": avg_recall,
-            "f1_score": f1
-        }
