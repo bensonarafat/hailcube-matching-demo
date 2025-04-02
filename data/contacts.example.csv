@@ -1,0 +1,61 @@
+id,name,email,slack_id,skills,timezone,preferred_contact,status
+1,Benson Arafat,benpaul320@gmail.com,U0817SSGULD,"Python, APIs, Data Analysis",America/New_York,email,1
+2,Cdoe Pym,codepym.ini@gmail.com,U07U1N20JSD,"Java, Kafka, Streaming",Europe/London,slack,1
+3,Ada Lovelace,ada.lovelace@gmail.com,U07X2ABCD12,"Python, Machine Learning, Data Science",Europe/Paris,email,1
+4,John Doe,johndoe@gmail.com,U081XYZW234,"JavaScript, React, Node.js",America/Los_Angeles,slack,1
+5,Jane Smith,janesmith@gmail.com,U09PQR56789,"SQL, Data Visualization, Tableau",Asia/Tokyo,email,1
+6,Michael Johnson,michaelj@gmail.com,U07LMN45678,"Go, Kubernetes, Docker",America/Chicago,slack,1
+7,Sophia Lee,sophia.lee@gmail.com,U08EFG12345,"Flutter, Firebase, Dart",Asia/Singapore,email,1
+8,Daniel Kim,daniel.kim@gmail.com,U06HIJ67890,"Rust, WebAssembly, Performance Optimization",Europe/Berlin,slack,1
+9,Emma Brown,emma.brown@gmail.com,U03KLM90123,"C++, Unreal Engine, AR/VR",America/Toronto,email,1
+10,Liam Wilson,liam.wilson@gmail.com,U05NOP23456,"Swift, iOS Development, CoreML",America/Denver,slack,1
+11,Olivia Martinez,olivia.martinez@gmail.com,U02QRS56789,"Java, Spring Boot, Microservices",America/Sao_Paulo,email,1
+12,Ethan Walker,ethan.walker@gmail.com,U04TUV67890,"Ruby on Rails, PostgreSQL, GraphQL",Europe/Madrid,slack,1
+13,Avery Carter,avery.carter@gmail.com,U01WXY90123,"PHP, Laravel, MySQL",Africa/Lagos,email,1
+14,Mason Rivera,mason.rivera@gmail.com,U09ABC23456,"TypeScript, Angular, Firebase",Asia/Kolkata,slack,1
+15,Isabella Gonzalez,isabella.gonzalez@gmail.com,U08DEF34567,"DevOps, Terraform, AWS",Australia/Sydney,email,1
+16,Ethan Patel,ethan.patel@gmail.com,U02GHJ12345,"Python, FastAPI, Data Engineering",America/New_York,email,1
+17,Sophia Ramirez,sophia.ramirez@gmail.com,U03XYZ67890,"Java, Spring Boot, Kafka",Europe/London,slack,1
+18,Noah Adams,noah.adams@gmail.com,U04ABC90123,"JavaScript, Vue.js, Node.js",Asia/Singapore,email,1
+19,Ava Thompson,ava.thompson@gmail.com,U05DEF23456,"C#, .NET, Azure",America/Toronto,slack,1
+20,Lucas White,lucas.white@gmail.com,U06GHI34567,"Go, gRPC, Kubernetes",Europe/Berlin,email,1
+21,Mia Johnson,mia.johnson@gmail.com,U07JKL45678,"Flutter, Firebase, Dart",America/Chicago,slack,1
+22,William Scott,william.scott@gmail.com,U08MNO56789,"Ruby, Sinatra, PostgreSQL",Asia/Tokyo,email,1
+23,Harper Lewis,harper.lewis@gmail.com,U09PQR67890,"Elixir, Phoenix, LiveView",Africa/Lagos,slack,1
+24,James Carter,james.carter@gmail.com,U01STU78901,"Swift, iOS, Core Data",America/Denver,email,1
+25,Amelia Clark,amelia.clark@gmail.com,U02VWX89012,"TypeScript, Next.js, GraphQL",America/Sao_Paulo,slack,1
+26,Henry Evans,henry.evans@gmail.com,U03YZA90123,"Rust, WebAssembly, Blockchain",Europe/Madrid,email,1
+27,Charlotte Mitchell,charlotte.mitchell@gmail.com,U04BCD01234,"PHP, Laravel, MySQL",Asia/Kolkata,slack,1
+28,Daniel Parker,daniel.parker@gmail.com,U05EFG12345,"Python, PyTorch, AI/ML",Australia/Sydney,email,1
+29,Emily Foster,emily.foster@gmail.com,U06HIJ23456,"DevOps, Terraform, AWS",America/New_York,slack,1
+30,Michael Nguyen,michael.nguyen@gmail.com,U07KLM34567,"JavaScript, React, WebSockets",Asia/Singapore,email,1
+31,Benjamin Hall,benjamin.hall@gmail.com,U08NOP45678,"C++, Unreal Engine, AR/VR",Europe/Berlin,email,1
+32,Victoria Allen,victoria.allen@gmail.com,U09QRS56789,"SQL, Data Warehousing, Snowflake",America/Toronto,slack,1
+33,Elijah Perez,elijah.perez@gmail.com,U01TUV67890,"Go, Microservices, Redis",Asia/Tokyo,email,1
+34,Chloe Young,chloe.young@gmail.com,U02WXY78901,"Python, Django, APIs",Africa/Lagos,slack,1
+35,Jackson Brooks,jackson.brooks@gmail.com,U03ZAB89012,"Scala, Akka, Big Data",America/Chicago,email,1
+36,Logan Carter,logan.carter@gmail.com,U04CDE90123,"Python, Flask, MongoDB",America/New_York,email,1
+37,Ella Sanders,ella.sanders@gmail.com,U05FGH01234,"Java, Kubernetes, Docker",Europe/London,slack,1
+38,David Harris,david.harris@gmail.com,U06IJK12345,"JavaScript, Svelte, Node.js",Asia/Singapore,email,1
+39,Samantha Ross,samantha.ross@gmail.com,U07LMN23456,"C++, Game Development, Unity",America/Toronto,slack,1
+40,Matthew Bennett,matthew.bennett@gmail.com,U08OPQ34567,"Go, Cloud Computing, Firebase",Europe/Berlin,email,1
+41,Zoey Richardson,zoey.richardson@gmail.com,U09RST45678,"Swift, iOS, Apple Pay",America/Chicago,slack,1
+42,Nathaniel Cooper,nathaniel.cooper@gmail.com,U01UVW56789,"Elixir, LiveView, Phoenix",Asia/Tokyo,email,1
+43,Grace Morgan,grace.morgan@gmail.com,U02XYZ67890,"Ruby, Rails, GraphQL",Africa/Lagos,slack,1
+44,Isaac Diaz,isaac.diaz@gmail.com,U03ABC78901,"TypeScript, Angular, Ionic",America/Denver,email,1
+45,Leah Henderson,leah.henderson@gmail.com,U04DEF89012,"Rust, Embedded Systems, IoT",America/Sao_Paulo,slack,1
+46,Alexander King,alexander.king@gmail.com,U05GHI90123,"Scala, Kafka, Streaming",Europe/Madrid,email,1
+47,Stella Wright,stella.wright@gmail.com,U06JKL01234,"PHP, Laravel, Vue.js",Asia/Kolkata,slack,1
+48,Owen Torres,owen.torres@gmail.com,U07MNO12345,"Python, NLP, Hugging Face",Australia/Sydney,email,1
+49,Lillian Reed,lillian.reed@gmail.com,U08PQR23456,"DevOps, Kubernetes, Terraform",America/New_York,slack,1
+50,Landon Foster,landon.foster@gmail.com,U09STU34567,"JavaScript, React Native, Expo",Asia/Singapore,email,1
+51,Penelope Brooks,penelope.brooks@gmail.com,U01VWX45678,"C++, AI/ML, OpenCV",Europe/Berlin,email,1
+52,Wyatt Scott,wyatt.scott@gmail.com,U02YZA56789,"SQL, Snowflake, Data Pipelines",America/Toronto,slack,1
+53,Hailey Evans,hailey.evans@gmail.com,U03BCD67890,"Go, Microservices, Redis",Asia/Tokyo,email,1
+54,Julian Morris,julian.morris@gmail.com,U04EFG78901,"Python, Django, FastAPI",Africa/Lagos,slack,1
+55,Violet Adams,violet.adams@gmail.com,U05HIJ89012,"Scala, Akka, Spark",America/Chicago,email,1
+56,Caleb Walker,caleb.walker@gmail.com,U06KLM90123,"R, Data Science, Statistical Modeling",Europe/London,slack,1
+57,Scarlett Bailey,scarlett.bailey@gmail.com,U07NOP01234,"JavaScript, Vue.js, Nuxt.js",Asia/Singapore,email,1
+58,Christian Rivera,christian.rivera@gmail.com,U08QRS12345,"C#, .NET Core, Azure",America/Toronto,slack,1
+59,Nora Simmons,nora.simmons@gmail.com,U09TUV23456,"Python, Web Scraping, BeautifulSoup",Europe/Berlin,email,1
+60,Oliver Bennett,oliver.bennett@gmail.com,U01WXY34567,"Java, Spring Boot, Hibernate",America/New_York,slack,1
